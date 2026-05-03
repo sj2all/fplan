@@ -39,6 +39,15 @@
     }
     @media (max-width: 900px) {
       .grid { grid-template-columns: 1fr; }
+      .wrap { padding: 12px; }
+      h1 { font-size: 18px; }
+      .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+      table { font-size: 12px; min-width: 300px; }
+      thead th { padding: 8px 6px; font-size: 12px; }
+      tbody td { padding: 6px; font-size: 12px; }
+      .save-bar { flex-wrap: wrap; gap: 8px; }
+      .btn-save { font-size: 13px; padding: 8px 16px; }
+      input[type="text"] { font-size: 16px; }
     }
     .panel {
       border: 1px solid var(--border);
@@ -178,7 +187,7 @@
 <body>
   <div class="wrap">
     <h1>봄밤파의 경제적 자유 시뮬레이터</h1>
-     <p class="topnote">노란색 입력칸에 숫자를 입력하시면, 나머지 값은 자동으로 계산됩니다.</p>
+    <p class="topnote">노란색 입력칸에 숫자를 입력하시면, 나머지 값은 자동으로 계산됩니다.</p>
 
     <div class="save-bar">
       <button class="btn-save" onclick="saveAll()">💾 저장</button>
